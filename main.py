@@ -1,9 +1,12 @@
 from Wiki import Wiki
 from generator import hashlines
 
-countries = Wiki('countries.json')
-countries.func('wikipedia.json')
+countries = Wiki('countries.json', 'wikipedia.json')
+for item in countries:
+    print(item)
 
-hashlines('wikipedia.json')
+
+for item in hashlines('wikipedia.json'):
+    print(item)
 
 
