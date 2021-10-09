@@ -1,8 +1,7 @@
-## Решение ДЗ к лекции 2.«Iterators. Generators. Yield» ##
+## Знакомство с понятиями Iterators, Generators, Yield в Python
 
+Имеется файл [countries.json](https://raw.githubusercontent.com/Cooleekova/Homework_Iterators/master/countries.json)
 
-+ класс итератора **Wiki.py**
+Итератор **Wiki.py** ищет страницу на википедии и записывает в файл **"wikipedia.json"** пару: страна – ссылка
 
-+ записывает в файл **"wikipedia.json"** пару: страна – ссылка
-
-+ генератор **generator.py**
+Генератор **generator.py** принимает путь к файлу и при каждой итерации возвращает md5 хеш каждой строки файла.
